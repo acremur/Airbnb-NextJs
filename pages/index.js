@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import LargeCard from '../components/LargeCard'
 import MediumCard from '../components/MediumCard'
-// import SmallCard from '../components/smallCard'
+import SmallCard from '../components/SmallCard'
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -22,16 +22,16 @@ export default function Home({ exploreData, cardsData }) {
         <section className='pt-6'>
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
           {/* Pull some data from a server - API endpoints */}
-          {/* <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
             {exploreData?.map(({ distance, location, img }, index) => (
-              <SmallCard 
+              <SmallCard
                 key={index} 
                 distance={distance}
                 location={location}
                 img={img}
               />
             ))}
-          </div> */}
+          </div>
         </section>
 
         {/* Medium cards*/}
