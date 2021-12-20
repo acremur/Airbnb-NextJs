@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { format } from 'date-fns'
 import InfoCard from "../components/InfoCard"
+import Map from "../components/Map"
 
 const search = ({ searchResults }) => {
 
@@ -35,6 +36,10 @@ const search = ({ searchResults }) => {
                             <InfoCard key={index} item={item} />
                         ))}
                     </div>
+                </section>
+
+                <section className="hidden xl:inline-flex xl:min-w-[600px]">
+                    <Map searchResults={searchResults} />
                 </section>
             </main>
             
